@@ -34,33 +34,20 @@
 
     <div class="container body-content">
 
-<!--         <div ng-controller="PostCtrl">
+        <div ng-controller="MainCtrl">
             <div ng-repeat="post in posts">
                 <div class="row">
                     <div class="span11">
                         <h2 ng-bind="post.title"></h2>
                         <ul class="list-group">
                             <li class="list-group-item">{{post.text}}</li>
-                            <li class="list-group-item">Created By : {{post.user.first_name + " " +post.user.last_name | uppercase}}</li>
+                            <li class="list-group-item">{{post.user.first_name}}</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div> -->
-        <div ng-controller="Post">
-            <form name="myForm">
-                <label>
-                    Post Title:
-                    <input type="text" name="title" ng-model="title" required>
-                </label>
-                <label>
-                    Post Text:
-                    <input type="text" name="text" ng-model="text" required>
-                </label>
-
-                <button ng-click="submit()">Save</button>
-            </form>
         </div>
+
         <footer>
             <p>My AngularJS Application</p>
         </footer>
